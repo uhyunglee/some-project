@@ -25,7 +25,7 @@ jobs:
           docker buildx build \
             --platform linux/amd64 \
             --push \
-            -t ghcr.io/${{ github.repository_owner }}/my-express-app:latest .
+            -t ghcr.io/${{ github.repository_owner }}/some-project:1.1 .
 
   deploy:
     needs: [build-and-push]
